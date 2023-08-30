@@ -104,15 +104,14 @@ This will have the startup instructions for steam. On how to launch the game.
 I have placed this file next to the game folder. under sdcard/windows/road.sh
 Its contents are like So. 
 
-`
-#!/bin/bash
+`#!/bin/bash
 
 flatpak run org.rncbc.qsynth &
 cd "run/media/mmcblk0p1/windows/Road Rash A1/Road Rash"
 flatpak run org.winehq.Wine "ROADRASH.EXE" > log.txt 2>&1
 
-killall -9 qsynth 
-`
+killall -9 qsynth`
+
 This script will make sure. Qsynth is run befroe the game starts and is closed after the game is stopped.
 It will also ofcouse instrict wine to Run the game.
 
